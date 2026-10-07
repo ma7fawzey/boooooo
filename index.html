@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Her </title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         LOADER
+    ====================================================== -->
+
+    <div class="loader" id="loader">
+
+        <div class="loader-inner">
+
+            <div class="loader-star">✦</div>
+
+            <div class="loader-title">
+                SOMETHING SPECIAL
+            </div>
+
+            <div class="loader-line">
+                <span id="loaderBar"></span>
+            </div>
+
+            <div class="loader-percent" id="loaderPercent">
+                0%
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CUSTOM CURSOR
+    ====================================================== -->
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+
+
+    <!-- =====================================================
+         PASSWORD SCREEN
+    ====================================================== -->
+
+    <section class="login" id="login">
+
+        <div class="login-noise"></div>
+
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+
+        <div class="login-content">
+
+            <div class="login-top">
+                A PRIVATE PLACE
+            </div>
+
+            <div class="login-symbol">
+                ✦
+            </div>
+
+            <h1>
+                Just For
+                <em>You</em>
+            </h1>
+
+            <p class="login-description">
+                There is a little world here<br>
+                that was made especially for you.
+            </p>
+
+            <div class="password-area">
+
+                <div class="password-label">
+                    ENTER THE SECRET
+                </div>
+
+                <input
+                    type="password"
+                    id="password"
+                    maxlength="4"
+                    autocomplete="off"
+                    placeholder="••••"
+                >
+
+                <button id="enterButton">
+                    <span>ENTER</span>
+                    <strong>→</strong>
+                </button>
+
+                <div class="wrong-password" id="wrongPassword">
+                    Maybe try again...
+                </div>
+
+            </div>
+
+            <div class="login-footer">
+                <span></span>
+                <i>•</i>
+                <span>MADE WITH LOVE</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MAIN WEBSITE
+    ====================================================== -->
+
+    <main id="website" class="website hidden">
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="navbar">
+
+            <div class="nav-brand">
+                <span>✦</span>
+                FOR YOU
+            </div>
+
+            <div class="nav-center">
+                A COLLECTION OF MEMORIES
+            </div>
+
+            <div class="nav-count">
+                <span id="counter">01</span>
+                <small>/ 20</small>
+            </div>
+
+        </nav>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="hero scene">
+
+            <div class="hero-bg"></div>
+
+            <div class="hero-light"></div>
+
+            <div class="hero-content">
+
+                <div class="hero-eyebrow">
+                    THIS ISN'T JUST A GALLERY
+                </div>
+
+                <h2>
+                    A little world<br>
+                    <span>made for you.</span>
+                </h2>
+
+                <div class="hero-divider"></div>
+
+                <p>
+                    Twenty moments.<br>
+                    One person worth remembering.
+                </p>
+
+            </div>
+
+            <div class="hero-scroll">
+
+                <span>SCROLL TO ENTER</span>
+
+                <div></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             IMAGE 01
+        ================================================== -->
+
+        <section
+            class="photo-scene scene"
+            data-number="1"
+        >
+
+            <div class="photo-frame frame-large">
+
+                <img
+                    src="images/1.jpg"
+                    alt="Memory 01"
+                >
+
+                <div class="photo-number">
+                    01
+                </div>
+
+            </div>
+
+            <div class="side-caption">
+
+                <span>01 / 20</span>
+
+                <h3>
+                    Some moments<br>
+                    deserve to stay.
+                </h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             IMAGE 02
+        ================================================== -->
+
+        <section
+            class="split-scene scene"
+            data-number="2"
+        >
+
+            <div class="split-text">
+
+                <span>02 / 20</span>
+
+                <h3>
+                    Not every<br>
+                    beautiful thing<br>
+                    needs a reason.
+                </h3>
+
+                <div class="tiny-line"></div>
+
+            </div>
+
+            <div class="split-image">
+
+                <img
+                    src="images/2.jpg"
+                    alt="Memory 02"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             IMAGE 03
+        ================================================== -->
+
+        <section
+            class="full-photo scene"
+            data-number="3"
+        >
+
+            <img
+                src="images/3.jpg"
+                alt="Memory 03"
+            >
+
+            <div class="full-photo-overlay"></div>
+
+            <div class="full-photo-text">
+
+                <span>03 / 20</span>
+
+                <h3>
+                    And suddenly...
+                </h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             POETRY — IMAGE 04
+        ================================================== -->
+
+        <section
+            class="poetry scene"
+            data-number="4"
+        >
+
+            <div class="poetry-background">
+
+                <img
+                    src="images/4.jpg"
+                    alt="Memory 04"
+                >
+
+            </div>
+
+            <div class="poetry-dark"></div>
+
+            <div class="poetry-grain"></div>
+
+            <div class="poetry-content">
+
+                <div class="poetry-number">
+                    04 / 20
+                </div>
+
+                <div class="poetry-star">
+                    ✦
+                </div>
+
+                <div class="poetry-line"></div>
+
+                <div
+                    class="poetry-text"
+                    dir="rtl"
+                >
+
+                    <p>
+                        مَا كُنت مِثلَ العَابِرِينَ فَإِنَّهُم..
+                    </p>
+
+                    <p>
+                        مَرُّوا عَلَيَّ وَأَنت سِرت خِلَالِي
+                    </p>
+
+                    <div class="poetry-gap"></div>
+
+                    <p>
+                        كُل الذِين قابلتُ قد جاوزتُهم..
+                    </p>
+
+                    <p>
+                        إلّاك قد قيّدتَ كُلَ خيالي
+                    </p>
+
+                </div>
+
+                <div class="poetry-footer">
+                    <span>FOR YOU</span>
+                    <b>✦</b>
+                    <span>1909</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             IMAGE 05
+        ================================================== -->
+
+        <section
+            class="editorial scene"
+            data-number="5"
+        >
+
+            <div class="editorial-image">
+
+                <img
+                    src="images/5.jpg"
+                    alt="Memory 05"
+                >
+
+            </div>
+
+            <div class="editorial-text">
+
+                <span>05 / 20</span>
+
+                <h3>
+                    If memories<br>
+                    could be framed...
+                </h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             IMAGES 06 - 09
+        ================================================== -->
+
+        <section
+            class="gallery-four scene"
+            data-number="6"
+        >
+
+            <div class="gallery-heading">
+
+                <span>06 — 09 / 20</span>
+
+                <h3>
+                    Four little<br>
+                    pieces.
+                </h3>
+
+            </div>
+
+            <div class="four-grid">
+
+                <div class="small-photo photo-a">
+
+                    <span>06</span>
+
+                    <img
+                        src="images/6.jpg"
+                        alt="Memory 06"
+                    >
+
+                </div>
+
+                <div class="small-photo photo-b">
+
+                    <span>07</span>
+
+                    <img
+                        src="images/7.jpg"
+                        alt="Memory 07"
+                    >
+
+                </div>
+
+                <div class="small-photo photo-c">
+
+                    <span>08</span>
+
+                    <img
+                        src="images/8.jpg"
+                        alt="Memory 08"
+                    >
+
+                </div>
+
+                <div class="small-photo photo-d">
+
+                    <span>09</span>
+
+                    <img
+                        src="images/9.jpg"
+                        alt="Memory 09"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             IMAGE 10
+        ================================================== -->
+
+        <section
+            class="split-scene reverse scene"
+            data-number="10"
+        >
+
+            <div class="split-image">
+
+                <img
+                    src="images/10.jpg"
+                    alt="Memory 10"
+                >
+
+            </div>
+
+            <div class="split-text">
+
+                <span>10 / 20</span>
+
+                <h3>
+                    Halfway there.<br>
+                    Still not enough.
+                </h3>
+
+                <div class="tiny-line"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             IMAGE 11
+        ================================================== -->
+
+        <section
+            class="center-scene scene"
+            data-number="11"
+        >
+
+            <div class="center-photo">
+
+                <img
+                    src="images/11.jpg"
+                    alt="Memory 11"
+                >
+
+            </div>
+
+            <div class="center-caption">
+
+                <span>11 / 20</span>
+
+                <h3>
+                    Beautifully<br>
+                    unforgettable.
+                </h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             IMAGES 12 - 15
+        ================================================== -->
+
+        <section
+            class="four-gallery scene"
+            data-number="12"
+        >
+
+            <div class="four-gallery-header">
+
+                <span>12 — 15 / 20</span>
+
+                <h3>
+                    The gallery.
+                </h3>
+
+            </div>
+
+            <div class="four-horizontal">
+
+                <div>
+                    <span>12</span>
+                    <img
+                        src="images/12.jpg"
+                        alt="Memory 12"
+                    >
+                </div>
+
+                <div>
+                    <span>13</span>
+                    <img
+                        src="images/13.jpg"
+                        alt="Memory 13"
+                    >
+                </div>
+
+                <div>
+                    <span>14</span>
+                    <img
+                        src="images/14.jpg"
+                        alt="Memory 14"
+                    >
+                </div>
+
+                <div>
+                    <span>15</span>
+                    <img
+                        src="images/15.jpg"
+                        alt="Memory 15"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             IMAGE 16
+        ================================================== -->
+
+        <section
+            class="big-memory scene"
+            data-number="16"
+        >
+
+            <div class="big-memory-photo">
+
+                <img
+                    src="images/16.jpg"
+                    alt="Memory 16"
+                >
+
+            </div>
+
+            <div class="big-memory-caption">
+
+                <span>16 / 20</span>
+
+                <h3>
+                    There are photographs.<br>
+                    And then there are<br>
+                    <em>memories.</em>
+                </h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             IMAGES 17 - 19
+        ================================================== -->
+
+        <section
+            class="three-gallery scene"
+            data-number="17"
+        >
+
+            <div class="three-heading">
+
+                <span>17 — 19 / 20</span>
+
+                <h3>
+                    Almost<br>
+                    at the end.
+                </h3>
+
+            </div>
+
+            <div class="three-grid">
+
+                <div>
+
+                    <span>17</span>
+
+                    <img
+                        src="images/17.jpg"
+                        alt="Memory 17"
+                    >
+
+                </div>
+
+                <div>
+
+                    <span>18</span>
+
+                    <img
+                        src="images/18.jpg"
+                        alt="Memory 18"
+                    >
+
+                </div>
+
+                <div>
+
+                    <span>19</span>
+
+                    <img
+                        src="images/19.jpg"
+                        alt="Memory 19"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FINAL IMAGE 20
+        ================================================== -->
+
+        <section
+            class="final scene"
+            data-number="20"
+        >
+
+            <div class="final-bg"></div>
+
+            <div class="final-photo">
+
+                <img
+                    src="images/20.jpg"
+                    alt="Memory 20"
+                >
+
+            </div>
+
+            <div class="final-shade"></div>
+
+            <div class="final-content">
+
+                <span>20 / 20</span>
+
+                <h2>
+                    And this one...
+                </h2>
+
+                <p>
+                    I think I'll keep it forever.
+                </p>
+
+                <div class="final-star">
+                    ✦
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             END
+        ================================================== -->
+
+        <section class="ending">
+
+            <div class="ending-content">
+
+                <div class="ending-star">
+                    ✦
+                </div>
+
+                <h2>
+                    That's all.
+                </h2>
+
+                <p>
+                    Or maybe just the beginning.
+                </p>
+
+                <div class="ending-line"></div>
+
+                <span>
+                    MADE ESPECIALLY FOR YOU
+                </span>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         PROGRESS BAR
+    ====================================================== -->
+
+    <div class="progress">
+
+        <div id="progressBar"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
